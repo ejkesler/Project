@@ -12,4 +12,8 @@ public class Move {
     public Location getTo(){
         return to;
     }
+    @Override
+    public String toString() {
+        return "(("+to.getRow()+","+to.getCol()+"),("+from.getRow()+","+from.getCol()+"))";
+    }
 }

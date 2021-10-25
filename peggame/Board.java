@@ -4,8 +4,10 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 
 public class Board {
+    int size;
     int[][] board;
     public Board (int size){
+        this.size=size;
         this.board = new int[size][size];
         for (int[] row : board) {
             for (int i = 0; i < row.length; i++) {
